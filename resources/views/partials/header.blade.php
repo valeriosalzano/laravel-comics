@@ -5,9 +5,8 @@
         </div>
         <ul>
             @foreach (config('db.header_links') as $link)
-                <li>
-                    {{-- remember to insert route() later --}}
-                    <a href="{{ $link['route'] }}">
+                <li class="{{Route::currentRouteName() == $link['route'] ?'active-page':''}}">
+                    <a href="{{ $link['route'] != '' ? route($link['route']) : '#' }}">
                         {{ $link['title'] }}
                     </a>
                 </li>

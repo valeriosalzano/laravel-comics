@@ -4,43 +4,43 @@ return [
     'header_links' => [
         [
             'title' => 'characters',
-            'route' => '#'
+            'route' => ''
         ],
         [
             'title' => 'comics',
-            'route' => '#'
+            'route' => 'comics'
         ],
         [
             'title' => 'movies',
-            'route' => '#'
+            'route' => ''
         ],
         [
             'title' => 'tv',
-            'route' => '#'
+            'route' => ''
         ],
         [
             'title' => 'games',
-            'route' => '#'
+            'route' => ''
         ],
         [
             'title' => 'collectibles',
-            'route' => '#'
+            'route' => ''
         ],
         [
             'title' => 'videos',
-            'route' => '#'
+            'route' => ''
         ],
         [
             'title' => 'fans',
-            'route' => '#'
+            'route' => ''
         ],
         [
             'title' => 'news',
-            'route' => '#'
+            'route' => ''
         ],
         [
             'title' => 'shop',
-            'route' => '#'
+            'route' => ''
         ],
     ],
     'footer_menus' => [

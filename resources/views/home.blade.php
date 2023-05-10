@@ -4,20 +4,8 @@
 
 
 @section('content')
-    <div id="comics-content">
-        <ul class="container">
-            <div class="label">current series</div>
-            @foreach ($comics as $comic)
-                <li>
-                    <div class="img-container"><img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}"></div>
-                    <h3>{{ $comic['title'] }}</h3>
-                </li>
-            @endforeach
-
-        </ul>
-        <div class="btns-container">
-            <button type="button" class="btn">load more</button>
-        </div>
-
+    <div>
+        <strong>Home page in fase di allestimento.</strong> 
+        <p>Puoi visitare la sezione "Comics" cliccando nella barra in alto</p>
     </div>
 @endsection

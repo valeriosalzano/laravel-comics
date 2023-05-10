@@ -11,7 +11,7 @@ header {
             color: $color-text-header;
         }
 
-        &:hover {
+        &:hover,&.active-page {
             a {
                 color: $color-primary;
             }
