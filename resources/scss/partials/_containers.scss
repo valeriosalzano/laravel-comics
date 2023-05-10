@@ -1,0 +1,30 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.img-container {
+  height: 80%;
+
+  img {
+    object-fit: cover;
+  }
+
+  a {
+    display: inline-block;
+    height: 100%;
+  }
+}
+
+.btns-container {
+  text-align: center;
+
+  .btn {
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(75%);
+    }
+  }
+}

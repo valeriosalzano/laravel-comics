@@ -12,6 +12,8 @@
         "vite": "^3.0.0"
     },
     "dependencies": {
+        "@fontsource/open-sans": "^4.5.14",
+        "@fontsource/open-sans-condensed": "^4.5.5",
         "@popperjs/core": "^2.11.6",
         "bootstrap": "^5.2.2"
     }
