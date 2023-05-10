@@ -4,24 +4,27 @@ header {
     font-size: 1.2rem;
 
     li {
-      position: relative;
-      min-width: 3.5rem;
+        position: relative;
+        min-width: 3.5rem;
 
-      a{color: $color-text-header;}
-      
-      &:hover {
         a {
-          color: $color-primary;
+            color: $color-text-header;
         }
-        &::after {
-          content: '';
-          height: 5px;
-          position: absolute;
-          bottom: -46px;
-          left: 0;
-          right: 0;
-          background-color: $color-primary;
+
+        &:hover {
+            a {
+                color: $color-primary;
+            }
+
+            &::after {
+                content: '';
+                height: 5px;
+                position: absolute;
+                bottom: -46px;
+                left: 0;
+                right: 0;
+                background-color: $color-primary;
+            }
         }
-      }
     }
-  }
+}

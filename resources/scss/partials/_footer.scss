@@ -1,0 +1,72 @@
+#footer {
+    @include mixins.background("../assets/img/footer-bg.jpg", center, cover);
+
+    .container {
+        @include mixins.display-flex($justify: space-between, $wrap: nowrap);
+        overflow: hidden;
+        height: 360px;
+    }
+
+
+    nav {
+        @include mixins.display-flex(column, flex-start, flex-start, wrap);
+
+        * {
+            align-self: flex-start;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: $color-text-footer-h3;
+        }
+
+        ul {
+            height: unset;
+            flex-direction: column;
+            margin-bottom: 0.5rem;
+            margin-right: 1rem;
+
+            a {
+                display: inline-block;
+                text-transform: capitalize;
+                font-size: 0.8rem;
+                color: $color-text-footer-menu;
+                margin: 0.1rem 0;
+
+                &:hover {
+                    filter: brightness(150%);
+                }
+            }
+        }
+    }
+}
+
+#footer-banner {
+    background-color: $color-bg-footer-banner;
+
+    nav {
+        .call-to-action {
+            text-transform: uppercase;
+            color: $color-text-btn;
+            padding: 1rem 1.5rem;
+            border: 3px solid $color-primary;
+
+            &:hover {
+                background-color: $color-primary;
+            }
+        }
+
+        .social-container {
+            @include mixins.display-flex();
+
+            p {
+                font-family: 'Open Sans Condensed', sans-serif;
+                text-transform: uppercase;
+                color: $color-primary;
+                font-size: 1.5rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
