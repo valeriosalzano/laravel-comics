@@ -1,0 +1,6 @@
+@use 'mixins';
+
+  #jumbotron {
+    @include mixins.background('/resources/img/jumbotron.jpg',top);
+    height: 400px;
+  }

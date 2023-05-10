@@ -1,0 +1,54 @@
+@use 'mixins';
+
+#comics-content {
+
+  ul {
+    position: relative;
+    @include mixins.display-flex($align: flex-start);
+    list-style: none;
+    padding: 3rem 1rem;
+
+    .label {
+      position: absolute;
+      top: 0;
+      left: 1rem;
+      transform: translateY(-50%);
+      padding: 0.5rem 1rem;
+      background-color: $color-primary;
+      text-transform: uppercase;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-weight: bold;
+    }
+
+    li {
+      width: calc(100% / 6 - 1rem);
+      margin: 1rem 0.5rem;
+
+      .img-container {
+        overflow: hidden;
+      }
+
+      img {
+        height: 300px;
+      }
+
+      h3 {
+        font-size: 1rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+      }
+    }
+  }
+
+  button {
+    border: none;
+    background-color: $color-primary;
+    padding: 0.5rem 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+}
