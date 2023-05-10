@@ -1,31 +1,39 @@
-<div>
-    <div id="footer">
-      <div class="container">
+<div id="footer">
+    <div class="container">
         <nav>
-            @foreach ( config('db.footer_menus') as  )
-                
+            @foreach (config('db.footer_menus') as $menu)
+                <ul>
+                    @foreach ($menu as $link)
+                        <li>
+                            @if ($loop->first)
+                                <h3>{{ $link['title'] }}</h3>
+                            @else
+                                <a href="#">{{ $link['title'] }}</a>
+                            @endif
+                        </li>
+                    @endforeach
+                </ul>
             @endforeach
-          <ul v-for="menu in navMenus">
-            <li v-for="(link,index) in menu">
-              <h3 v-if="index==0">{{link.title}}</h3>
-              <a v-else :href="link.href">{{ link.text }}</a>
-            </li>
-          </ul>
+
         </nav>
-        <img id="footer-bg-logo" src="../assets/img/dc-logo-bg.png">
-      </div>
-      <div id="footer-banner">
-        <div class="container">
-          <nav>
+        <img id="footer-bg-logo" src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}">
+    </div>
+</div>
+<div id="footer-banner">
+    <div class="container">
+        <nav>
             <a class="call-to-action" href="#">sign-up now!</a>
             <div class="social-container">
-              <p>follow us</p>
-              <ul>
-                <li v-for="icon in navIcons"><a href="#"><img :src="getImagePath(icon.image)" :alt="`${icon.social} logo`"></a></li>
-              </ul>
+                <p>follow us</p>
+                <ul>
+                    @foreach (config('db.social_icons') as $icon)
+                        <li>
+                            <a href="#"><img src="{{ Vite::asset('resources/img/' . $icon['image']) }}"
+                                    alt="{{ $icon['name'] }}"></a>
+                        </li>
+                    @endforeach
+                </ul>
             </div>
-          </nav>
-        </div>
-      </div>
+        </nav>
     </div>
-  </div>
+</div>

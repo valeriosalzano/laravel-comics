@@ -190,23 +190,23 @@ return [
     ],
     'social_icons' => [
         [
-            'social' => 'facebook',
+            'name' => 'facebook',
             'image' => 'footer-facebook.png',
         ],
         [
-            'social' => 'twitter',
+            'name' => 'twitter',
             'image' => 'footer-twitter.png',
         ],
         [
-            'social' => 'youtube',
+            'name' => 'youtube',
             'image' => 'footer-youtube.png',
         ],
         [
-            'social' => 'pinterest',
+            'name' => 'pinterest',
             'image' => 'footer-pinterest.png',
         ],
         [
-            'social' => 'periscope',
+            'name' => 'periscope',
             'image' => 'footer-periscope.png',
         ],
     ],

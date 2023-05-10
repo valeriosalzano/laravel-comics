@@ -17,8 +17,10 @@
         <div class="container">
             @yield('content')
         </div>
+        
     </main>
-
+    
+    @include('partials.banner')
     @include('partials.footer')
 </body>
 

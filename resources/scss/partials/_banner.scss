@@ -1,0 +1,37 @@
+@use 'mixins';
+
+#banner {
+    height: 150px;
+    background-color: $color-primary;
+
+    nav {
+        img {
+            height: 40%;
+            margin-right: 0.5rem;
+        }
+
+        ul {
+            flex-grow: 1;
+
+            li {
+                width: calc(20% - 1rem);
+                height: 100%;
+
+                &:last-of-type img {
+                    height: 30%;
+                }
+            }
+
+            a {
+                font-size: 1rem;
+                color: white;
+                height: 100%;
+                @include mixins.display-flex();
+
+                &:hover {
+                    backdrop-filter: brightness(70%);
+                }
+            }
+        }
+    }
+}

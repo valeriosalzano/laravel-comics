@@ -1,5 +1,8 @@
+@use 'mixins';
+
 #footer {
-    @include mixins.background("../assets/img/footer-bg.jpg", center, cover);
+
+    @include mixins.background("/resources/img/footer-bg.jpg", center, cover);
 
     .container {
         @include mixins.display-flex($justify: space-between, $wrap: nowrap);
